@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* :root {
+  --primary-main: #11235a;
+  --primary-soft: #596fb7;
+  --secondary-main: #c6cf9b;
+  --secondary-soft: #eef5ff;
+  --primary-bg: #F5F5F5;
+} */
+:root {
+  --primary-main: #11235a;
+  --primary-soft: #596fb7;
+  --secondary-main: #c6cf9b;
+  --secondary-soft: #b4d4ff;
+  --primary-bg: #f5f5f5;
+}
+
+body {
+  background-color: var(--primary-bg);
+}
+
+html {
+  scroll-behavior: smooth;
+}
