@@ -1,21 +1,23 @@
 'use client';
 
-import { usersData } from '@/app/data/usersData';
 import { useState } from 'react';
+import { usersData } from '@/app/data/usersData';
 
 const PendingInvoices = () => {
-  const [isChecked, setIsChecked] = useState(false);
+  const [invoices, setInvoices] = useState(usersData);
+
   function checkboxHandler(id) {
-    setIsChecked(() => {
-      usersData.map((user) => {
-        if (user.id === id) {
-          return { ...user, isPaid: !user.isPaid };
+    setInvoices((prevState) => {
+      return prevState.map((invoice) => {
+        if (invoice.id === id) {
+          return { ...invoice, isPaid: !invoice.isPaid };
         } else {
-          return { user };
+          return invoice;
         }
       });
     });
   }
+
   return (
     <div className="pending-invoices__container w-full">
       <div className="heading__container flex items-center justify-between py-2">
@@ -34,28 +36,28 @@ const PendingInvoices = () => {
           </tr>
         </thead>
         <tbody>
-          {usersData.map((user) => {
-            const { id } = user;
+          {invoices.map((invoice) => {
+            const { id, name, billedHours, date, amount, isPaid } = invoice;
             return (
-              <tr key={user.id}>
+              <tr key={invoice.id}>
                 <td>
                   <div className="flex gap-5">
                     <input
                       type="checkbox"
                       className="h-4 w-4"
-                      name={user.name}
-                      id={user.id}
-                      checked={isChecked}
+                      name={name}
+                      id={id}
+                      checked={isPaid}
                       onChange={() => {
                         checkboxHandler(id);
                       }}
                     />
-                    <h1>{user.name}</h1>
+                    <h1>{name}</h1>
                   </div>
                 </td>
-                <td>{user.billedHours}</td>
-                <td>{user.date}</td>
-                <td>{user.amount}</td>
+                <td>{billedHours}</td>
+                <td>{date}</td>
+                <td>{amount}</td>
                 <td>
                   <button className="w-full rounded-md bg-green-400 px-2 py-1 text-lg">
                     Pay

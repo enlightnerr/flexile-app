@@ -1,5 +1,5 @@
 import Fund from '@/app/Components/Invoices/Fund';
-import PendingInvoices from '@/app/Components/Invoices/PendingInvoices';
+import PendingInvoices from '@/app/Components/Invoices/pendingInvoices/PendingInvoices';
 import Profile from '@/app/Components/Invoices/Profile';
 import SearchBtn from '@/app/Components/Invoices/SearchBtn';
 
