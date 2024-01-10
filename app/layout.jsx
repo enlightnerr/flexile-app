@@ -1,5 +1,10 @@
-import { Poppins } from 'next/font/google';
+import { Poppins, Lemon } from 'next/font/google';
+
 import './globals.css';
+import Image from 'next/image';
+import { logoIcon } from './data/exports';
+import Link from 'next/link';
+import { FaGithub } from 'react-icons/fa';
 
 const poppins = Poppins({ subsets: ['latin'], weight: ['400'] });
 
@@ -11,7 +16,22 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={poppins.className}>{children}</body>
+      <body className={`${poppins.className} relative`}>
+        {children}
+        <div className="github__container fixed bottom-0 right-0 -translate-x-5">
+          <button className="flex items-end gap-2">
+            <span className="text-sm text-primary-main">
+              Incase you want to see the code!
+            </span>
+            <Link
+              href="https://github.com/enlightnerr/flexile-app"
+              target="_blank"
+            >
+              <FaGithub size={50} />
+            </Link>
+          </button>
+        </div>
+      </body>
     </html>
   );
 }

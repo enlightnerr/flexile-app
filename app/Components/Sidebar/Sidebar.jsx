@@ -6,6 +6,7 @@ import { darkLogo, lightLogo } from '@/app/data/exports';
 import { usePathname } from 'next/navigation';
 import { BiLogOutCircle } from 'react-icons/bi';
 import { MdDarkMode } from 'react-icons/md';
+import { SiGumroad } from 'react-icons/si';
 
 const Sidebar = () => {
   const pathname = usePathname();
@@ -34,8 +35,12 @@ const Sidebar = () => {
       </nav>
       <div className="sidebarBtn__container flex items-center justify-between gap-5 px-10">
         <div className="logout__container">
-          <button className="">
+          {/* <button className="">
             <MdDarkMode size={50} />
+          </button> */}
+          <button className="flex items-center gap-2 font-semibold">
+            <SiGumroad size={30} />
+            Gumroad
           </button>
         </div>
         <div className="logout__container">
