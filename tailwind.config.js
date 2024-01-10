@@ -15,6 +15,7 @@ module.exports = {
         'primary-bg': 'var(--primary-bg)',
         'pay-btn': 'var(--pay-btn)',
       },
+      fontFamily: {},
     },
   },
   plugins: [],
