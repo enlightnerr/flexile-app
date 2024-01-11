@@ -1,0 +1,231 @@
+/* for extra small devices */
+@media screen and (max-width: 640px) {
+  body {
+    margin: 1rem;
+  }
+
+  .backdrop__container {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+  }
+  .backdrop__container img {
+    height: 100vh;
+    width: 100%;
+  }
+
+  body .github__container {
+    position: relative;
+    display: flex;
+    transform: none;
+    margin: 2rem 0;
+  }
+
+  .github-items__container {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .github-items__container span {
+    font-size: 18px;
+  }
+
+  .main__container {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+  }
+  .heading__container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  .heading__container h1 {
+    font-size: 3.5rem;
+  }
+  .sub-hero__container {
+    gap: 2rem;
+  }
+  .sub-hero__container h1 {
+    font-size: 2rem;
+  }
+  .list__container {
+    gap: 2rem;
+  }
+  .list__container ol li {
+    font-size: 1.2rem;
+  }
+}
+/* for small devices */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  body {
+    height: 100%;
+    margin: 2rem;
+  }
+
+  .backdrop__container {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+  }
+  .backdrop__container img {
+    height: 100vh;
+    width: 100%;
+  }
+
+  body .github__container {
+    position: relative;
+    display: flex;
+    transform: none;
+    margin: 3rem 0;
+  }
+
+  .github-items__container {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .github-items__container span {
+    font-size: 18px;
+  }
+
+  .main__container {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+  }
+  .heading__container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+    margin: 2rem;
+  }
+  .heading__container h1 {
+    font-size: 4rem;
+  }
+  .sub-hero__container {
+    gap: 4rem;
+  }
+  .sub-hero__container h1 {
+    font-size: 2.5rem;
+  }
+  .list__container {
+    gap: 3rem;
+  }
+  .list__container ol li {
+    font-size: 1.5rem;
+  }
+}
+
+/* for bigger tablets and devices  */
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  body {
+    height: 100%;
+    margin: 2rem 4rem;
+  }
+
+  .backdrop__container {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+  }
+  .backdrop__container img {
+    height: 100vh;
+    width: 100%;
+  }
+
+  body .github__container {
+    position: relative;
+    display: flex;
+    transform: none;
+    margin-top: 4rem;
+  }
+
+  .github-items__container {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .github-items__container span {
+    font-size: 1.5rem;
+  }
+
+  .main__container {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+  }
+  .heading__container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+    margin: 2rem;
+  }
+  .heading__container h1 {
+    font-size: 5rem;
+  }
+  .sub-hero__container {
+    gap: 3rem;
+  }
+  .sub-hero-text {
+    font-size: 2.5rem;
+  }
+  .list__container {
+    gap: 2rem;
+  }
+  .list__container-text {
+    font-size: 2rem;
+  }
+  .list__container ol li {
+    font-size: 1.5rem;
+  }
+  .message {
+    font-size: 1.5rem;
+  }
+}
+
+/* for bigger screens */
+
+@media screen and (min-width: 1011px) and (max-width: 1280px) {
+  body {
+    margin: 0rem 4rem;
+  }
+  .list__container {
+    gap: 2rem;
+  }
+  .list__container-text {
+    font-size: 1.7rem;
+  }
+  .list__container ol li {
+    font-size: 1.1rem;
+  }
+  .message {
+    font-size: 1.2rem;
+  }
+}

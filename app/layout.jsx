@@ -1,8 +1,5 @@
 import { Poppins, Lemon } from 'next/font/google';
-
 import './globals.css';
-import Image from 'next/image';
-import { logoIcon } from './data/exports';
 import Link from 'next/link';
 import { FaGithub } from 'react-icons/fa';
 
@@ -18,7 +15,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${poppins.className} relative`}>
         {children}
-        <div className="github__container fixed bottom-0 right-0 -translate-x-5">
+        <div className="github__container fixed bottom-0 right-0 -translate-x-5 sm:hidden md:hidden">
           <button className="github-items__container flex items-end gap-2">
             <span className="text-sm text-primary-main">
               Incase you want to see the code!

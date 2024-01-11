@@ -1,8 +1,8 @@
 import { Lemon } from 'next/font/google';
 import Image from 'next/image';
 import Link from 'next/link';
-import { arrow, curvedArrow, logoIcon } from './data/exports';
-import './media-queries.css';
+import { logoIcon } from './data/exports';
+import './styles/home.css';
 
 const lemon = Lemon({ subsets: ['latin'], weight: ['400'] });
 
@@ -30,12 +30,14 @@ export default function Home() {
         </div>
       </div>
       <div className="sub-hero__container flex flex-col gap-5 rounded-lg border-2 border-secondary-main p-5">
-        <h1 className="text-[2.5rem] font-bold">
+        <h1 className="sub-hero-text text-[2.5rem] font-bold">
           The app is still in development
         </h1>
-        <div className="list__container min-w-3/4 flex flex-col gap-2 text-primary-main">
-          <p className="text-2xl font-semibold">Few pages I worked on</p>
-          <ol className="list-items flex flex-col gap-5 text-2xl font-semibold">
+        <div className="list__container min-w-3/4 flex flex-col gap-4 text-primary-main">
+          <p className="list__container-text text-2xl font-semibold">
+            Few pages I worked on
+          </p>
+          <ol className="list-items flex flex-col gap-5 text-xl font-semibold">
             <li className="list-item w-fit   rounded-lg bg-secondary-main px-4 py-1">
               <Link href="/login">Login</Link>
             </li>
@@ -46,7 +48,7 @@ export default function Home() {
               <Link href="/dashboard">Dashboard</Link>
             </li>
           </ol>
-          <p className="">
+          <p className="message">
             I tried to keep everything minimal and used Next js App router and
             React core fundamentals.
           </p>

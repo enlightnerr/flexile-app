@@ -24,3 +24,9 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
+@media screen and (max-width: 640px) {
+  .github-items__container {
+    display: none;
+  }
+}

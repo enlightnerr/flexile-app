@@ -1,0 +1,183 @@
+/* for extra small devices */
+@media screen and (max-width: 640px) {
+  body {
+    margin: 1rem;
+  }
+  .logo__container {
+    display: none;
+  }
+  .user__container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+  .children__container {
+    width: 100%;
+  }
+
+  .hero__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .hero__container p {
+    font-size: 1.2rem;
+  }
+  .hero__container img {
+    width: 90%;
+  }
+  .login__container {
+    width: 100%;
+    margin: 2rem 0;
+  }
+  .login__container .heading__container h1 {
+    font-size: 2rem;
+  }
+  .form__container {
+    gap: 12px;
+  }
+  .form__label {
+    font-size: 1.5rem;
+  }
+  .form-btn__container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .form-btn__container button {
+    width: 100%;
+    border-radius: 2px;
+    font-size: 1.5rem;
+  }
+  .form-btn__container a {
+    font-size: 1.1rem;
+  }
+}
+/* for small devices */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  body {
+    margin: 1rem;
+  }
+  .logo__container {
+    display: none;
+  }
+  .user__container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+  .children__container {
+    width: 100%;
+  }
+  .login-hero__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .login-hero__container p {
+    font-size: 1.2rem;
+  }
+  .login-hero__container img {
+    width: 90%;
+  }
+  .login__container {
+    width: 100%;
+    margin: 2rem 0;
+  }
+  .login__container .heading__container h1 {
+    font-size: 2rem;
+  }
+  .form__container {
+    gap: 12px;
+  }
+  .form__label {
+    font-size: 1.5rem;
+  }
+  .form-btn__container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .form-btn__container button {
+    width: 100%;
+    border-radius: 2px;
+    font-size: 1.5rem;
+  }
+  .form-btn__container a {
+    font-size: 1.1rem;
+  }
+}
+/* for bigger tablets and devices  */
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  body {
+    margin: 2rem 4rem;
+  }
+  .logo__container {
+    display: none;
+  }
+  .user__container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .children__container {
+    width: 100%;
+  }
+
+  .login-hero__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+  .login-hero__container p {
+    font-size: 1.6rem;
+    line-height: 1;
+    margin: 0;
+  }
+  .login-hero__container img {
+    width: 90%;
+  }
+  .login__container {
+    width: 100%;
+    margin: 2rem 0;
+  }
+  .login__container .heading__container h1 {
+    font-size: 2rem;
+  }
+  .form__container {
+    gap: 12px;
+  }
+  .form__label {
+    font-size: 1.5rem;
+  }
+  .form-btn__container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .form-btn__container button {
+    width: 100%;
+    border-radius: 2px;
+    font-size: 1.5rem;
+  }
+  .form-btn__container a {
+    font-size: 1.1rem;
+  }
+}
+
+/* for bigger screens */
+
+@media screen and (min-width: 1011px) and (max-width: 1280px) {
+  body {
+    margin: 0rem 2rem;
+  }
+}
