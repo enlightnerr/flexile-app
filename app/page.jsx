@@ -10,8 +10,13 @@ export default function Home() {
   return (
     <main className="main__container relative flex h-[100vh] w-full items-center justify-evenly">
       <div className="header__container relative flex flex-col gap-2">
-        <div className="backdrop__container fixed left-[50%] top-1 z-[-1] -translate-x-[50%] transform opacity-5">
-          <Image src={logoIcon} alt="background logo" fill />
+        <div className="backdrop__container fixed left-[50%] top-1 z-[-1] h-full w-full -translate-x-[70%] transform opacity-5">
+          <Image
+            src={logoIcon}
+            alt="background logo"
+            fill
+            className="h-full w-full"
+          />
         </div>
         <div className="heading__container">
           <h1
