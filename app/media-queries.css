@@ -3,18 +3,22 @@
     height: fit-content;
     margin: 1rem;
   }
+
+  .backdrop__container {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+  }
+  .backdrop__container img {
+    height: 100vh;
+    width: 100%;
+  }
+
   body .github__container {
     position: relative;
     display: flex;
     transform: none;
     margin: 2rem 0;
-  }
-
-  .backdrop__container {
-    position: fixed;
-    top: 0;
-    height: 1000px;
-    width: 500px;
   }
 
   .github-items__container {
