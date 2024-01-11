@@ -1,0 +1,58 @@
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  body {
+    height: fit-content;
+    margin: 1rem;
+  }
+  body .github__container {
+    position: relative;
+    display: flex;
+    transform: none;
+    margin: 2rem 0;
+  }
+
+  .github-items__container {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .github-items__container span {
+    font-size: 18px;
+  }
+
+  .main__container {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+  }
+  .backdrop__container {
+    display: none;
+  }
+  .heading__container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  .heading__container h1 {
+    font-size: 3.5rem;
+  }
+  .sub-hero__container {
+    gap: 2rem;
+  }
+  .sub-hero__container h1 {
+    font-size: 2rem;
+  }
+  .list__container {
+    gap: 2rem;
+  }
+  .list__container ol li {
+    font-size: 1.2rem;
+  }
+}

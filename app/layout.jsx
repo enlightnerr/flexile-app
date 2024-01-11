@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
       <body className={`${poppins.className} relative`}>
         {children}
         <div className="github__container fixed bottom-0 right-0 -translate-x-5">
-          <button className="flex items-end gap-2">
+          <button className="github-items__container flex items-end gap-2">
             <span className="text-sm text-primary-main">
               Incase you want to see the code!
             </span>
