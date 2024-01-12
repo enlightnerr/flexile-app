@@ -9,7 +9,10 @@
   .dashboard-children__container {
     width: 100%;
   }
-  .sidebar__container {
+  /* .sidebar__container {
+    display: none;
+  } */
+  .sidebar-layout__container {
     display: none;
   }
   .invoices__container {
@@ -89,6 +92,25 @@
     display: block;
   }
   .navClose {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  .sidebar-layout__container {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .sidebar-layout__container {
+    display: none;
+  }
+}
+/* for bigger screens */
+
+@media screen and (min-width: 1011px) and (max-width: 1280px) {
+  .mobile-nav__container {
     display: none;
   }
 }
