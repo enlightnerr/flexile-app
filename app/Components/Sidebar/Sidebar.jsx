@@ -26,7 +26,11 @@ const Sidebar = () => {
                 key={link.id}
                 href={link.address}
                 className={`sidebar__link flex items-center gap-2 py-5 pl-10 text-xl font-semibold text-primary-main
-            ${link.address === pathname ? 'bg-secondary-main' : 'opacity-30'}`}
+            ${
+              link.address === pathname
+                ? 'bg-secondary-main '
+                : 'opacity-30 hover:bg-secondary-main hover:opacity-20'
+            }`}
               >
                 {link.icon}
                 {link.title}
