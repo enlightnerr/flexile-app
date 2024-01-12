@@ -5,18 +5,17 @@ import SearchBtn from '@/app/Components/Invoices/SearchBtn';
 
 const Invoices = () => {
   return (
-    <>
-      <div className="invoices-header__container mx-5 mt-8 flex items-center justify-between gap-10">
+    <div className="invoices__container mx-5 mt-8 ">
+      <div className="invoices-header__container flex items-center justify-between gap-10">
         <SearchBtn />
         <Profile />
       </div>
       <hr className="" />
-      <div className=""></div>
-      <div className="fund__container mx-5 mt-2 flex h-full justify-between gap-2">
+      <div className="invoices-hero__container mx-5 mt-2 flex justify-between gap-2">
         <PendingInvoices />
         <Fund />
       </div>
-    </>
+    </div>
   );
 };
 

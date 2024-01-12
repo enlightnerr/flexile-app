@@ -1,0 +1,90 @@
+@media screen and (max-width: 640px) {
+  body {
+    margin: 1rem;
+  }
+  .dashboard__container {
+    height: 100%;
+  }
+  .sidebar__container {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+  }
+  .dashboard-children__container {
+    width: 100%;
+  }
+  .invoices__container {
+    margin: 0;
+    padding: 0;
+  }
+  .invoices-header__container {
+    width: 100%;
+  }
+  .invoices-hero__container {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .pending-invoices__container {
+    order: 2;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 2px;
+    /* margin: 1rem 0; */
+  }
+  .pending-invoices__container .heading__container {
+    width: 100%;
+    margin: 1rem 0;
+  }
+  .pending-invoices__container .heading__container h1 {
+    font-size: 1.3rem;
+  }
+  .pending-invoices__container .heading__container button {
+    padding: 5px;
+    border-radius: 2px;
+    font-size: 1rem;
+  }
+
+  .table__contractors {
+    border-collapse: separate;
+    border-spacing: 2px 5px;
+    text-align: center;
+  }
+  .table__contractors th,
+  td {
+    font-size: 0.8rem;
+    width: fit-content;
+  }
+  .table-label {
+    margin-left: 5px;
+    gap: 5px;
+  }
+  .table-pay-button {
+    padding: 0 5px;
+    font-size: 0.8rem;
+    border-radius: 2px;
+  }
+  .fund__container {
+    width: 100%;
+  }
+  .balance-amount__container {
+    padding: 1rem;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .pending-amount__container {
+    padding: 1rem;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .cards__container {
+    padding: 1rem;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

@@ -41,7 +41,7 @@ const PendingInvoices = () => {
             return (
               <tr key={invoice.id}>
                 <td>
-                  <div className="flex gap-5">
+                  <div className="table-label flex gap-5">
                     <input
                       type="checkbox"
                       className="h-4 w-4"
@@ -59,7 +59,7 @@ const PendingInvoices = () => {
                 <td>{date}</td>
                 <td>{amount}</td>
                 <td>
-                  <button className="w-full rounded-md bg-green-400 px-2 py-1 text-lg">
+                  <button className="table-pay-button w-full rounded-md bg-green-400 px-2 py-1 text-lg">
                     Pay
                   </button>
                 </td>
