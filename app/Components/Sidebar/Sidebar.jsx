@@ -7,15 +7,17 @@ import { usePathname } from 'next/navigation';
 import { BiLogOutCircle } from 'react-icons/bi';
 import { MdDarkMode } from 'react-icons/md';
 import { SiGumroad } from 'react-icons/si';
+import { IoArrowBackCircleSharp } from 'react-icons/io5';
 
 const Sidebar = () => {
   const pathname = usePathname();
 
   return (
-    <section className="flex h-full flex-col">
+    <div className="sidebar__container flex h-full w-full flex-col">
       <nav className="sidebar__nav-container mt-8 flex h-full w-full flex-col gap-5">
-        <div className="brand__container w-full">
-          <Image src={darkLogo} alt="" height={90} className="pl-10" />
+        <div className="brand__container flex w-full items-center justify-between">
+          <Image src={darkLogo} alt="" className="sm: w-1/2 pl-10" />
+          <IoArrowBackCircleSharp size={40} />
         </div>
         <div className="mt-5 flex w-full flex-col">
           {sidebarLinks.map((link) => {
@@ -33,7 +35,7 @@ const Sidebar = () => {
           })}
         </div>
       </nav>
-      <div className="sidebarBtn__container flex items-center justify-between gap-5 px-10">
+      <div className="sidebarBtn__container mb-2 flex items-center justify-between gap-5 px-10">
         <div className="logout__container">
           {/* <button className="">
             <MdDarkMode size={50} />
@@ -51,7 +53,7 @@ const Sidebar = () => {
           </button>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

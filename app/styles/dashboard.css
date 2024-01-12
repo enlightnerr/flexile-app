@@ -4,15 +4,13 @@
   }
   .dashboard__container {
     height: 100%;
-  }
-  .sidebar__container {
-    display: none;
-    width: 100vw;
-    height: 100vh;
-    position: absolute;
+    flex-direction: column;
   }
   .dashboard-children__container {
     width: 100%;
+  }
+  .sidebar__container {
+    display: none;
   }
   .invoices__container {
     margin: 0;
@@ -86,5 +84,11 @@
     padding: 1rem;
     flex-direction: row;
     justify-content: space-between;
+  }
+  .navOpen {
+    display: block;
+  }
+  .navClose {
+    display: none;
   }
 }
