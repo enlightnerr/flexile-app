@@ -28,8 +28,7 @@ const MobileNav = () => {
         <div
           className={`${
             isNavOpen
-              ? `navOpen absolute top-[15%] z-50 h-max w-full border-2 border-primary-main 
-               bg-white`
+              ? `navOpen z-50 h-max w-full border-2 border-primary-main bg-white`
               : `navClose mt-5 flex w-full flex-col`
           }`}
         >

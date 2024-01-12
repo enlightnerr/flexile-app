@@ -11,7 +11,7 @@ const Invoices = () => {
         <Profile />
       </div>
       <hr className="" />
-      <div className="invoices-hero__container mx-5 mt-2 flex justify-between gap-2">
+      <div className="invoices-hero__container mx-5 mt-2 flex items-center justify-between gap-2">
         <PendingInvoices />
         <Fund />
       </div>
