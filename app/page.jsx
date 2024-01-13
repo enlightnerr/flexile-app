@@ -22,7 +22,7 @@ export default function Home() {
           <h1
             className={`${lemon.className} heading text-[5rem] text-primary-main`}
           >
-            Hey Sahil!
+            Hey Friend! 👋
           </h1>
           <h3 className="text-2xl font-semibold text-primary-main">
             Maybe you are visiting this page!
@@ -31,7 +31,7 @@ export default function Home() {
       </div>
       <div className="sub-hero__container flex flex-col gap-5 rounded-lg border-2 border-secondary-main p-5">
         <h1 className="sub-hero-text text-[2.5rem] font-bold">
-          The app is still in development
+          The app is still in development!
         </h1>
         <div className="list__container min-w-3/4 flex flex-col gap-4 text-primary-main">
           <p className="list__container-text text-2xl font-semibold">
